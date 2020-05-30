@@ -25,4 +25,44 @@ else
 
 }
   }
+
+void add(t,m)
+{
+t=t+m;
+System.out.println("result is="+t);
+
+}
+
+public static void main(String [] args)
+{
+  String s1,s2,c;
+  int val,res=0;
+
+System.out.println("enter the values to be added-")
+  s1=new Scanner(System.in).nextLine();
+  s2=new Scanner(System.in).nextLine();
+  try{res=stringCalc(s1,s2)}
+
+catch(Ne e){System.out.println(e);}
+
+System.out.println("result is"+res);
+while(1){
+System.out.println("want to add more numbers?? (y/n)");
+ c=new Scanner(System.in).nextLine();
+
+ switch (c){
+case y: System.out.println("enter value-");
+        val=new Scanner(System.in).nextInt();
+        add(res,val);
+        continue;
+   case n: break;
+ }
+}
+
+
+
+
+}
+
+
 }
