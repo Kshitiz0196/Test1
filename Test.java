@@ -1,3 +1,6 @@
+C:\Users\Kshitiz\Desktop\Temp\Test.java
+package p1;
+
 import java.util.Scanner;
 import java.lang.String;
 
@@ -28,8 +31,10 @@ else
 
 void add(t,m)
 {
-t=t+m;
-System.out.println("result is="+t);
+  if (m<0){throw new Ne("negatives not allowed"+m)}
+  else
+ {t=t+m;
+System.out.println("result is="+t);}
 
 }
 
