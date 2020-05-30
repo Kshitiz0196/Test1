@@ -1,4 +1,3 @@
-C:\Users\Kshitiz\Desktop\Temp\Test.java
 package p1;
 
 import java.util.Scanner;
