@@ -29,9 +29,9 @@ else
 }
   }
 
-void add(t,m)
+ static void add(int t,int m) throws Ne
 {
-  if (m<0){throw new Ne("negatives not allowed"+m)}
+  if (m<0){throw new Ne("negatives not allowed"+m);}
   else
  {t=t+m;
 System.out.println("result is="+t);}
@@ -43,10 +43,10 @@ public static void main(String [] args)
   String s1,s2,c;
   int val,res=0;
 
-System.out.println("enter the values to be added-")
+System.out.println("enter the values to be added-");
   s1=new Scanner(System.in).nextLine();
   s2=new Scanner(System.in).nextLine();
-  try{res=stringCalc(s1,s2)}
+  try{res=stringCalc(s1,s2);}
 
 catch(Ne e){System.out.println(e);}
 
